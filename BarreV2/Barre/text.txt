@@ -1,0 +1,6 @@
+Ajouter Barre
+Ajouter Barre rectangle
+Ajouter Barre rond
+Ajouter Barre carre
+Ajouter Catalogue
+Quitter
