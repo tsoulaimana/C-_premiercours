@@ -1,7 +1,9 @@
 #include "element.h"
 
 
-Element::Element()
+Element::Element(const int _vitesse):
+    numero(0),
+    vitesse(_vitesse)
 {
 
 }
@@ -14,4 +16,14 @@ Element::~Element()
 void Element::Afficher()
 {
 
+}
+
+int Element::getNumero() const
+{
+    return numero;
+}
+
+void Element::setNumero(int newNumero)
+{
+    numero = newNumero;
 }

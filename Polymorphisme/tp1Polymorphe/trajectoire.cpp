@@ -24,6 +24,7 @@ bool Trajectoire::Ajouter(Element *_pElement)
     bool retourTrajet = true;
     if(prochaineEtape < nbEtapesMax){
         parcours[prochaineEtape++] = _pElement;
+        parcours[prochaineEtape-1] ->setNumero(prochaineEtape);
     }else{
         retourTrajet = false;
     }
@@ -33,6 +34,11 @@ bool Trajectoire::Ajouter(Element *_pElement)
 
 void Trajectoire::Afficher()
 {
+    /*
+    Vecteur vecteurTotal;
+    double longueurTotal = 0.0;
+    double dureeTotale = 0.0;
+    */
     cout<< "Trajectoire : " << endl;
     for(int indice = 0; indice< nbEtapesMax; indice++){
         parcours[indice] -> Afficher();
