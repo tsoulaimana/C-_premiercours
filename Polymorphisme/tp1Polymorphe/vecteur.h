@@ -5,7 +5,17 @@
 class Vecteur
 {
 public:
-    Vecteur();
+    Vecteur(const double x, const double y);
+    //operator
+    //operator
+    void Afficher();
+    void setX(const double _x);
+    double getX();
+    void setY(const double _x);
+    double getY();
+private:
+    double x;
+    double y;
 };
 
 #endif // VECTEUR_H

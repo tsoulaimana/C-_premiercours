@@ -23,7 +23,7 @@ int Element::getNumero() const
     return numero;
 }
 
-void Element::setNumero(int newNumero)
+void Element::setNumero(const int _numero)
 {
-    numero = newNumero;
+    numero = _numero;
 }
