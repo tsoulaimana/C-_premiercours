@@ -27,3 +27,13 @@ void Element::setNumero(const int _numero)
 {
     numero = _numero;
 }
+
+double Element::ObtenirLongueur()
+{
+
+}
+
+Vecteur Element::ObtenirVecteurArrivee()
+{
+
+}

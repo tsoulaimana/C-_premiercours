@@ -5,7 +5,7 @@
 Segment::Segment(const double _longueur, const double _angle, const int vitesse):
     Element(vitesse),
     longueur(_longueur),
-  angle(_angle)
+    angle(_angle)
 {
 
 }
