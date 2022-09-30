@@ -15,7 +15,7 @@ public:
     void setX(double _x);
     double getY() const;
     void setY(double _y);
-private:
+protected:
     double x;
     double y;
 };

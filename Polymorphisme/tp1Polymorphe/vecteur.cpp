@@ -10,17 +10,17 @@ Vecteur::Vecteur(const double _x, const double _y):
 
 Vecteur Vecteur::operator +(const Vecteur &_autre)
 {
-    return Vecteur(this->x + _autre.x, this->y + _autre.y);
+    return Vecteur(x + _autre.x, y + _autre.y);
 }
 
 Vecteur Vecteur::operator -(const Vecteur &_autre)
 {
-    return Vecteur(this->x - _autre.x, this->y - _autre.y);
+    return Vecteur(x - _autre.x, y - _autre.y);
 }
 
 void Vecteur::Afficher()
 {
-    cout << "(" << this->x << ")" << ", " << "(" << this->y << ")" << endl;
+    cout << "(" << x << "," << y << ")" << endl;
 }
 
 double Vecteur::getX() const

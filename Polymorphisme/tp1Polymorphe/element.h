@@ -3,6 +3,7 @@
 #include "vecteur.h"
 #include <iostream>
 #include <iomanip>
+#include <math.h>
 using namespace std;
 
 class Element
@@ -13,9 +14,9 @@ public:
     virtual void Afficher()=0;
     int getNumero() const;
     void setNumero(const int _numero);
-    double ObtenirLongueur();
-    double ObtenirDuree();
-    Vecteur ObtenirVecteurArrivee();
+    virtual double ObtenirLongueur()=0;
+    virtual double ObtenirDuree()=0;
+    virtual Vecteur ObtenirVecteurArrivee()=0;
 protected:
     int numero;
     double vitesse;
